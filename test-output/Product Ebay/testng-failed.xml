@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Product Ebay]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Access By Search(failed)">
+    <classes>
+      <class name="test.productEbay.accessBySearch">
+        <methods>
+          <include name="loginValid"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.productEbay.accessBySearch -->
+    </classes>
+  </test> <!-- Access By Search(failed) -->
+</suite> <!-- Failed suite [Product Ebay] -->
