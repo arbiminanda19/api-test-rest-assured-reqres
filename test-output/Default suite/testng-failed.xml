@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apiTestRunner.RunReqresTest">
+      <class name="runner.RunReqresTest">
         <methods>
           <include name="getListByIdAPI"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- apiTestRunner.RunReqresTest -->
+      </class> <!-- runner.RunReqresTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="apiTestRunner.RunReqresTest" class="method navigator-link" hash-for-method="getListByIdAPI">getListByIdAPI</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunReqresTest" class="method navigator-link" hash-for-method="getListByIdAPI">getListByIdAPI</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -118,12 +118,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="apiTestRunner.RunReqresTest" class="method navigator-link" hash-for-method="createAPI">createAPI</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunReqresTest" class="method navigator-link" hash-for-method="createAPI">createAPI</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="apiTestRunner.RunReqresTest" class="method navigator-link" hash-for-method="getListUserPageAPI">getListUserPageAPI</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.RunReqresTest" class="method navigator-link" hash-for-method="getListUserPageAPI">getListUserPageAPI</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -141,7 +141,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">apiTestRunner.RunReqresTest</span>
+              <span class="class-name">runner.RunReqresTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -150,75 +150,98 @@
                   </a> <!-- getListByIdAPI -->
                   <span class="method-name">getListByIdAPI</span>
                   <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
+                      Expected status code &lt;200&gt; but was &lt;404&gt;.
 
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at apiTestRunner.RunReqresTest.getListByIdAPI(RunReqresTest.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+                      at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+                      at
+                      java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+                      at
+                      java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+                      at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+                      at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+                      at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+                      at
+                      org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+                      at
+                      org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+                      at
+                      org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+                      at
+                      org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+                      at
+                      io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+                      at
+                      io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown
+                      Source)
+                      at
+                      io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+                      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                      at
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+                      at
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                      at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                      at
+                      org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+                      at
+                      org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+                      at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+                      at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+                      at
+                      io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:127)
+                      at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+                      at
+                      io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+                      at
+                      io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+                      at
+                      io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+                      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                      at
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+                      at
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                      at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                      at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+                      at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+                      at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+                      at
+                      org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+                      at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+                      at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+                      at runner.RunReqresTest.getListByIdAPI(RunReqresTest.java:61)
+                      at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                      at
+                      java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+                      at
+                      java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+                      at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+                      at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+                      at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+                      at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+                      at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+                      at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+                      at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+                      at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+                      at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                      at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+                      at org.testng.TestRunner.privateRun(TestRunner.java:794)
+                      at org.testng.TestRunner.run(TestRunner.java:596)
+                      at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+                      at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+                      at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+                      at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+                      at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+                      at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+                      at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+                      at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+                      at org.testng.TestNG.runSuites(TestNG.java:1063)
+                      at org.testng.TestNG.run(TestNG.java:1031)
+                      at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+                      at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+                      at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
-</div> <!-- stack-trace -->
+                  </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,7 +249,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apiTestRunner.RunReqresTest</span>
+              <span class="class-name">runner.RunReqresTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -257,7 +280,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;apiTestRunner.RunReqresTest&quot;/&gt;
+      &lt;class name=&quot;runner.RunReqresTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -290,29 +313,29 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
-var data = new google.visualization.DataTable();
-data.addColumn('number', 'Number');
-data.addColumn('string', 'Method');
-data.addColumn('string', 'Class');
-data.addColumn('number', 'Time (ms)');
-data.addRows(3);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getListUserPageAPI')
-data.setCell(0, 2, 'apiTestRunner.RunReqresTest')
-data.setCell(0, 3, 2680);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createAPI')
-data.setCell(1, 2, 'apiTestRunner.RunReqresTest')
-data.setCell(1, 3, 1770);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getListByIdAPI')
-data.setCell(2, 2, 'apiTestRunner.RunReqresTest')
-data.setCell(2, 3, 1296);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
-return data;
-}
+                  suiteTableInitFunctions.push('tableData_Default_suite');
+                  function tableData_Default_suite() {
+                  var data = new google.visualization.DataTable();
+                  data.addColumn('number', 'Number');
+                  data.addColumn('string', 'Method');
+                  data.addColumn('string', 'Class');
+                  data.addColumn('number', 'Time (ms)');
+                  data.addRows(3);
+                  data.setCell(0, 0, 0)
+                  data.setCell(0, 1, 'getListUserPageAPI')
+                  data.setCell(0, 2, 'runner.RunReqresTest')
+                  data.setCell(0, 3, 2680);
+                  data.setCell(1, 0, 1)
+                  data.setCell(1, 1, 'createAPI')
+                  data.setCell(1, 2, 'runner.RunReqresTest')
+                  data.setCell(1, 3, 1770);
+                  data.setCell(2, 0, 2)
+                  data.setCell(2, 1, 'getListByIdAPI')
+                  data.setCell(2, 2, 'runner.RunReqresTest')
+                  data.setCell(2, 3, 1296);
+                  window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+                  return data;
+                  }
               </script>
               <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
@@ -340,7 +363,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">apiTestRunner.RunReqresTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runner.RunReqresTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>

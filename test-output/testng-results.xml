@@ -6,24 +6,24 @@
     <groups>
     </groups>
     <test started-at="2022-02-24T01:03:25 ICT" name="Default test" finished-at="2022-02-24T01:03:32 ICT" duration-ms="7056">
-      <class name="apiTestRunner.RunReqresTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apiTestRunner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:25 ICT" name="setUp" finished-at="2022-02-24T01:03:26 ICT" duration-ms="1203" status="PASS">
+      <class name="runner.RunReqresTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:25 ICT" name="setUp" finished-at="2022-02-24T01:03:26 ICT" duration-ms="1203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getListUserPageAPI()[pri:0, instance:apiTestRunner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:26 ICT" name="getListUserPageAPI" finished-at="2022-02-24T01:03:29 ICT" duration-ms="2680" status="PASS">
+        <test-method signature="getListUserPageAPI()[pri:0, instance:runner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:26 ICT" name="getListUserPageAPI" finished-at="2022-02-24T01:03:29 ICT" duration-ms="2680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getListUserPageAPI -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apiTestRunner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:29 ICT" name="setUp" finished-at="2022-02-24T01:03:29 ICT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:29 ICT" name="setUp" finished-at="2022-02-24T01:03:29 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="createAPI()[pri:1, instance:apiTestRunner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:29 ICT" name="createAPI" finished-at="2022-02-24T01:03:31 ICT" duration-ms="1770" status="PASS">
+        <test-method signature="createAPI()[pri:1, instance:runner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:29 ICT" name="createAPI" finished-at="2022-02-24T01:03:31 ICT" duration-ms="1770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAPI -->
-        <test-method signature="getListByIdAPI()[pri:2, instance:apiTestRunner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:31 ICT" name="getListByIdAPI" finished-at="2022-02-24T01:03:32 ICT" duration-ms="1296" status="FAIL">
+        <test-method signature="getListByIdAPI()[pri:2, instance:runner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:31 ICT" name="getListByIdAPI" finished-at="2022-02-24T01:03:32 ICT" duration-ms="1296" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -31,7 +31,7 @@ Expected status code <200> but was <404>.
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+                <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <200> but was <404>.
 
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -70,7 +70,7 @@ at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
 at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-at apiTestRunner.RunReqresTest.getListByIdAPI(RunReqresTest.java:61)
+at runner.RunReqresTest.getListByIdAPI(RunReqresTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,11 +105,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getListByIdAPI -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apiTestRunner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:31 ICT" name="setUp" finished-at="2022-02-24T01:03:31 ICT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:runner.RunReqresTest@1649b0e6]" started-at="2022-02-24T01:03:31 ICT" name="setUp" finished-at="2022-02-24T01:03:31 ICT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-      </class> <!-- apiTestRunner.RunReqresTest -->
+      </class> <!-- runner.RunReqresTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

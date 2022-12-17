@@ -1,6 +1,6 @@
 package payload;
 
-public class ListAPI {
+public class baseUrl {
 	private final String reqresAPI = "https://reqres.in/";
     
     public String getReqresAPI() {

@@ -9,7 +9,7 @@ This is automation API test for endpoint [this url](https://reqres.in/)
 * Open project as Maven Project in Eclipse, Intellij, or other IDE
 * Run ReqresTestAPI.java file using TestNG. The directory file:
 ```
-{YourProjectPath}/src/test/java/apiTestRunner
+{YourProjectPath}/src/test/java/runner
 ```
 * In that file, there is a scenario API test that consists of several test case:
 	* Test Case 1, to get list all of users in the spesific page
