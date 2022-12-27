@@ -16,3 +16,7 @@ This is automation API test for endpoint [this url](https://reqres.in/)
 	* Test Case 2, to get spesific user using user id from Test Case 1
 	* Test Case 3, to create new user
     * Test Case 4, to create new user with username as object
+* To generate report, you can run this cmd command on project directory, make sure allure has been installed in your device:
+```
+allure serve allure-results
+```

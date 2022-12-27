@@ -29,7 +29,7 @@ public class getUser {
     }
 	
 	@Test(priority = 1)
-    public void getListUserPageAPI(){
+	public void getListUserPageAPI(){
 		response = given()
                 .when()
                 .get("api/users?page=" + rand.nextInt(2))
