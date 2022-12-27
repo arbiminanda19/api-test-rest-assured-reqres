@@ -14,7 +14,7 @@ import java.util.Random;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class test {
+public class getUser {
 
 	baseUrl ip = new baseUrl();
 	Response response;
@@ -52,39 +52,6 @@ public class test {
                 .extract().response();
 		JsonPath responseParsed = response.jsonPath();
 		Assert.assertTrue(user_id == responseParsed.getInt("data.id"));
-	}
-
-	@Test(priority = 3)
-	public void createUser() {
-		String payload = data.createUsers().toJSONString();
-		response = given()
-				.header("Content-Type", "application/json")
-				.body(payload)
-				.when()
-				.post("api/users")
-				.then()
-				.log().body()
-				.statusCode(201)
-				.extract().response();
-		name = response.getBody().path("name");
-		Assert.assertTrue(payload.contains(name));
-	}
-
-	@Test(priority = 4)
-	public void createUserByList() {
-		String payload = data.createUsersByList().toJSONString();
-		response = given()
-				.header("Content-Type", "application/json")
-				.body(payload)
-				.when()
-				.post("api/users")
-				.then()
-				.log().body()
-				.statusCode(201)
-				.extract().response();
-		JsonPath responseParsed = response.jsonPath();
-		name = responseParsed.getString("user.name");
-		Assert.assertTrue(payload.contains(name));
 	}
 	
 }
