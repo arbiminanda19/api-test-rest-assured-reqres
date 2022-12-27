@@ -13,5 +13,6 @@ This is automation API test for endpoint [this url](https://reqres.in/)
 ```
 * In that file, there is a scenario API test that consists of several test case:
 	* Test Case 1, to get list all of users in the spesific page
-	* Test Case 2, to create new users
-	* Test Case 3, to get spesific user using user id that has been created in Test Case 2
+	* Test Case 2, to get spesific user using user id from Test Case 1
+	* Test Case 3, to create new user
+    * Test Case 4, to create new user with username as object
